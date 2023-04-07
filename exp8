@@ -1,0 +1,14 @@
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+    int *ptr=(int*)calloc(4,4);
+    *ptr=5;
+    printf ("%d %d \n",*ptr,ptr);
+    ptr=ptr+1;
+{
+    *ptr=2;
+    printf ("*%d %d", *ptr, ptr);
+}
+return 0;
+}
